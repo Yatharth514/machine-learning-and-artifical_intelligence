@@ -21,3 +21,26 @@ print(f"The precision of the machine is : {Precision}%")
 user2_input=int(input("Enter the image pixel value which ranges from 0 to 255 : "))
 normalized_value=float(user2_input/255)
 print(f"The noramlized value {normalized_value:.3f}")
+
+message ='Yatharth\'s World' # by \ we can implement ' in the print statement 
+print(message)
+print(message.upper())
+print(message.lower())
+print(message.count('a'))
+new_message=message.replace("World","Universe")
+print(new_message) # here in case of replace we have to store new string in the different variable
+
+greeting = "Hello"
+name = "Yatharth"
+
+# updated_msg=greeting + ", " + name
+# print(updated_msg)
+# instead of this we use placeholder and format 
+
+updated_msg="{}, {}. Welcome!".format(greeting,name)
+print(updated_msg)
+
+#or we could just use updated_msg=f"{greeting}, {Yatharth}. Welcome!"
+
+#if we round a digit by 1 digit after a decimal 
+print(round(3.75,1))

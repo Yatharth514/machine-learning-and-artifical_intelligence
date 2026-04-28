@@ -42,4 +42,23 @@ batch = [
     }
 ]
 
-print(f"The features of the batch 2nd member are : {batch[1]["features"]}")
+print(f"The features of the batch 2nd member are : {batch[1]['features']}")
+
+name=["My","Name","Is","Yatharth"]
+name_2=["Chaudhary"]
+name.extend(name_2)
+print(name)
+print(name.index("Chaudhary"))
+
+#if we want both index and value through a loop we use enumerate
+for index,n in enumerate(name):
+    print(index,n)
+
+name_str="_".join(name)
+new_name=name_str.split("_")
+print(new_name)
+
+print(name_str)
+
+for key,value in vocab.items():
+    print(key, value)
